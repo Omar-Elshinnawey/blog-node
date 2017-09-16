@@ -58,7 +58,3 @@ app.init([apiRouter],
         console.log(`Server started and listening on port ${app.getPort()}`);
         console.log(`environment: ${process.env.NODE_ENV}`);
     });
-	
-process.on('unhandledRejection', (reason, p) => {
-  console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
-});
